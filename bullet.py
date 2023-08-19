@@ -22,12 +22,12 @@ class Bullet(Sprite):
     def update(self):
         """Move the bullet up the screen."""
 
-        # Update the decimale position of the bullet. 
+        # Update the decimal position of the bullet. 
         self.y -= self.settings.bullet_speed
         # Update the rect position.
         self.rect.y = self.y
 
     def draw_bullet(self):
         """Draw the bullet to the screen."""
-        
+
         pygame.draw.rect(self.screen, self.color, self.rect)
